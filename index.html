@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Logics Mind</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        $(document).ready(function(){
+          $(".arrow").hide();
+
+          $(window).scroll(function(){
+             if($(this).scrollTop() > 100){
+                $(".arrow").fadeIn();
+             }else{
+                $(".arrow").fadeOut();
+             }
+          });
+
+          $(".arrow").click(function(){
+            $("html, body").animate({
+                scrollTop: 0
+            }, 500);
+          });
+
+          $("#image1").hide();
+          $("#image2").hide();
+          $("#image3").hide();
+          $("#image4").hide();
+          $("#image5").hide();
+          $("#image6").hide();
+          $("#image7").hide();
+          $("#image8").hide();
+          $("#image9").hide();
+          $("#image10").hide();
+          $("#hide").hide();
+
+          $("#show").click(function(){
+            $("#image1").fadeIn(400);
+            $("#image2").fadeIn(600);
+            $("#image3").fadeIn(800);
+            $("#image4").fadeIn(1000);
+            $("#image5").fadeIn(1200);
+            $("#image6").fadeIn(1400);
+            $("#image7").fadeIn(1600);
+            $("#image8").fadeIn(1800);
+            $("#image9").fadeIn(2000);
+            $("#image10").fadeIn(2200);
+            $("#show").hide();
+            $("#hide").show();
+          });
+
+          $("#hide").click(function(){
+            $("#image1").fadeOut(2200);
+            $("#image2").fadeOut(2000);
+            $("#image3").fadeOut(1800);
+            $("#image4").fadeOut(1600);
+            $("#image5").fadeOut(1400);
+            $("#image6").fadeOut(1200);
+            $("#image7").fadeOut(1000);
+            $("#image8").fadeOut(800);
+            $("#image9").fadeOut(600);
+            $("#image10").fadeOut(400);
+            $("#show").show();
+            $("#hide").hide();
+          });
+        });
+    </script>
+</head>
+<body>
+<div class="header_image">
+    <div class="header">
+        <h1>LOGICSMIND.COM</h1>
+    </div><br><br><br>
+    <div class="menu-items">
+        <ul>
+            <a href="#courses"><li>Courses</li></a>
+            <a href="#certificates"><li>Certifications</li></a>
+            <a href="#gallary"><li>Gallary</li></a>
+            <a href="#aboutus"><li>About us</li></a>
+            <a href="#contactus"><li>Contact Us</li></a>
+        </ul>
+    </div>
+
+    <form id="contect-form">
+      <h2>Contact Form</h2>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required /><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email"  name="email" required /><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message"></textarea><br>
+      
+      <button type="submit" id="btn">Send via WhatsApp</button>
+    </form>
+
+    <div class="social" style="margin-top: 5%; position: fixed">
+      <a href="https://wa.link/2ah6gv" class="fa fa-whatsapp" style="text-decoration: none; font-size: 28px; background-color: green; color: #fff; padding: 15px; border-radius: 100%"></a><br><br>
+      <a href="tel:+91 9949134545" class="fa fa-phone" style="text-decoration: none; font-size: 28px; background-color: green; color: #fff; padding: 15px; border-radius: 100%"></a>
+    </div>
+
+    <div class="arrow">
+        <h2>&uarr;</h2>
+    </div>
+</div>
+
+<section id="courses">
+    <div class="courses">
+      <h2>certificate Affiliated Courses</h2>
+      <fieldset>
+        <legend>Software pack</legend>
+        <div class="packone" id="pack">
+          <img src="images/CPORGRAMMING.png">
+          <img src="images/JAVAPROGRAMMING.jpg">
+          <img src="images/PYTHONPROGRAMMING.jpg">
+          <img src="images/WEBTECHNOLOGIES.jpg">
+
+          <p><strike>Rs/- 20000</strike><br><b>Rs/-10000</b><br>Life Time Access</p>
+        </div>
+        <details>
+          <summary>Pack Include</summary>
+          <ul>
+            <li>C PROGRAMMING</li>
+            <li>JAVA SE PROGRAMMING</li>
+            <li>PYTHON PROGRAMMING</li>
+            <li>WEB TECHNOLOGIES (HTML,CSS,JAVASCRIPT,JQUERY,PHP,MYSQL)</li>
+            <li>2 Mini Projects</li>
+            <li>1 Main Project</li>
+            <li>1 Course Completation Certificate</li>
+            <li>1 Project Completation certificate</li>
+          </ul>
+        </details>
+        
+      </fieldset>
+      <fieldset>
+        <legend>Tally</legend>
+        <div class="packone" id="pack">
+          <img src="images/TALLY1.jpg" style="width: 180px; height: 115px;">
+          <p><strike>Rs/- 15000</strike><br><b>Rs/-8000</b><br>Life Time Access</p>
+        </div>
+        <details>
+          <summary>Pack Include</summary>
+          <ul>
+            <li>1 MONTH(17 TOPIC) Rs/- 6000</li>
+            <li>2 MONTHS(40 TOPIC) Rs/- 8000</li>
+          </ul>
+        </details>
+      </fieldset>
+
+      <fieldset>
+        <legend>Cyber Security Pack</legend>
+        <div class="packone" id="pack">
+          <img src="images/CYBERSECURITY.jpg" style="width: 180px; height: 115px;">
+          <p><strike>Rs/- 20000</strike><br><b>Rs/-15000</b><br>Life Time Access</p>
+        </div>
+        <details>
+          <summary>Pack Include</summary>
+          <lu>
+            <li>HARDWARE</li>
+            <li>NETWORKING</li>
+            <li>CYBER SECURITY</li>
+          </lu>
+        </details>
+      </fieldset>
+
+      <fieldset>
+        <legend>C Programming</legend>
+        <div class="packone" id="pack">
+          <img src="images/CPORGRAMMING.png" style="width: 180px; height: 115px;">
+          <p><strike>Rs/- 3500</strike><br><b>Rs/-3000</b><br>Life Time Access</p>
+        </div>
+        <details>
+          <summary>Pack Include</summary>
+          <lu>
+            <li>2 Mini Projects</li>
+            <li>1 Main Project</li>
+            <li>1 Course Completation Certificate</li>
+            <li>1 Project Completation certificate</li>
+          </lu>
+        </details>
+      </fieldset>
+
+      <fieldset>
+        <legend>JAVA SE Programming</legend>
+        <div class="packone" id="pack">
+          <img src="images/JAVAPROGRAMMING.jpg" style="width: 180px; height: 115px;">
+          <p><strike>Rs/- 6500</strike><br><b>Rs/-6000</b><br>Life Time Access</p>
+        </div>
+        <details>
+          <summary>Pack Include</summary>
+          <lu>
+            <li>2 Mini Projects</li>
+            <li>1 Main Project</li>
+            <li>1 Course Completation Certificate</li>
+            <li>1 Project Completation certificate</li>
+          </lu>
+        </details>
+      </fieldset>
+
+      <fieldset>
+        <legend>Python Programming</legend>
+        <div class="packone" id="pack">
+          <img src="images/PYTHONPROGRAMMING.jpg" style="width: 180px; height: 115px;">
+          <p><strike>Rs/- 6500</strike><br><b>Rs/-6000</b><br>Life Time Access</p>
+        </div>
+        <details>
+          <summary>Pack Include</summary>
+          <lu>
+            <li>2 Mini Projects</li>
+            <li>1 Main Project</li>
+            <li>1 Course Completation Certificate</li>
+            <li>1 Project Completation certificate</li>
+          </lu>
+        </details>
+      </fieldset>
+
+      <fieldset>
+        <legend>Web Technologies</legend>
+        <div class="packone" id="pack">
+          <img src="images/WEBTECHNOLOGIES.jpg" style="width: 180px; height: 115px;">
+          <p><strike>Rs/- 6500</strike><br><b>Rs/-6000</b><br>Life Time Access</p>
+        </div>
+        <details>
+          <summary>Pack Include</summary>
+          <lu>
+            <li>HTML,CSS,JAVASCRIPT,JQUERY,PHP,MYSQL</li>
+            <li>2 Mini Projects</li>
+            <li>1 Main Project</li>
+            <li>1 Course Completation Certificate</li>
+            <li>1 Project Completation certificate</li>
+          </lu>
+        </details>
+      </fieldset>
+
+      <fieldset>
+        <legend>DCA</legend>
+        <div class="packone" id="pack">
+          <img src="images/DCA.webp" style="width: 180px; height: 115px;">
+          <p><strike>Rs/- 4000</strike><br><b>Rs/-2500</b><br>Life Time Access</p>
+        </div>
+        <details>
+          <summary>Pack Include</summary>
+          <lu>
+            <li>COMPUTER BASICS</li>
+            <li>MS-OFFICE</li>
+            <li>MS-EXCEL</li>
+            <li>MS-POWER POINT</li>
+          </lu>
+        </details>
+      </fieldset>
+
+      <fieldset>
+        <legend>Digital Marketing</legend>
+        <div class="packone" id="pack">
+          <img src="images/DIGITALMARKETING.png" style="width: 180px; height: 115px;">
+          <p><strike>Rs/- 15000</strike><br><b>Rs/-12500</b><br>Life Time Access</p>
+        </div>
+        <details>
+          <summary>Pack Include</summary>
+          <lu>
+            <li>HARDWARE</li>
+            <li>NETWORKING</li>
+            <li>CYBER SECURITY</li>
+          </lu>
+        </details>
+      </fieldset>
+
+      <fieldset>
+        <legend>PhotoShop</legend>
+        <div class="packone" id="pack">
+          <img src="images/PHOTOSHOP.png" style="width: 180px; height: 115px;">
+          <p><strike>Rs/- 8000</strike><br><b>Rs/-6000</b><br>Life Time Access</p>
+        </div>
+        <details>
+          <summary>Pack Include</summary>
+          <lu>
+            <li>HARDWARE</li>
+            <li>NETWORKING</li>
+            <li>CYBER SECURITY</li>
+          </lu>
+        </details>
+      </fieldset>
+
+      <fieldset>
+        <legend>HardWare & Networking</legend>
+        <div class="packone" id="pack">
+          <img src="images/HARDANDNETWORKING.webp" style="width: 180px; height: 115px;">
+          <p><strike>Rs/- 18000</strike><br><b>Rs/-15000</b><br>Life Time Access</p>
+        </div>
+        <details>
+          <summary>Pack Include</summary>
+          <lu>
+            <li>HARDWARE</li>
+            <li>NETWORKING</li>
+            <li>CYBER SECURITY</li>
+          </lu>
+        </details>
+      </fieldset>
+
+      <fieldset>
+        <legend>Cyber Security</legend>
+        <div class="packone" id="pack">
+          <img src="images/CYBERSECURITY.jpg" style="width: 180px; height: 115px;">
+          <p><strike>Rs/- 20000</strike><br><b>Rs/-15000</b><br>Life Time Access</p>
+        </div>
+        <details>
+          <summary>Pack Include</summary>
+          <lu>
+            <li>HARDWARE</li>
+            <li>NETWORKING</li>
+            <li>CYBER SECURITY</li>
+          </lu>
+        </details>
+      </fieldset>
+
+      
+    </div>
+  </section>
+
+  <section id="certificates">
+    <div class="certificates">
+      <center>
+        <h2>We Are Providing</h2>
+        <img src="images/LOGICSMIND.jpeg">
+        <img src="images/TALLY.png">
+        <img src="images/CEH.jpg">
+        <img src="images/ORACLE.jpg">
+        <img src="images/MICROSOFT.webp">
+      </center>
+    </div>
+  </section>
+
+  <section id="aboutus">
+  <center><div class="resize">
+    <div class="aboutus" id="add_block">
+    <h2 style="color: rgb(249, 18, 18); font-size: 28px;">About Us: Logics Mind...</h2>  
+ <p>
+    Welcome to Logics Mind, a premier destination for aspiring software professionals and technology enthusiasts!  
+    
+    At Logics Mind, we believe that a strong foundation in technology and innovative thinking is the key to thriving in the ever-evolving world of software and IT. Our institute is dedicated to providing comprehensive, hands-on training that empowers students to excel in software development, programming, and cutting-edge technologies.  
+  </p> 
+    <h3>Our Mission</h3>
+    <p>
+    To inspire and equip individuals with the skills, knowledge, and mindset to become leaders in the software industry, fostering innovation, creativity, and excellence in every step of their journey.  
+    </p>
+    <h3>What We Offer</h3>
+    <p>
+    - Expert-Led Training: Learn from industry professionals with years of experience in software development and IT.  
+    - Comprehensive Curriculum: From beginner courses to advanced programming techniques, we cover a wide range of topics, including coding languages, software engineering, and modern tools.  
+    - Practical Learning: Engage in hands-on projects, real-world case studies, and collaborative problem-solving to gain practical expertise.  
+    - Career Guidance: Benefit from personalized mentorship and job-oriented programs designed to help you achieve your professional goals.  
+    </p>
+      <h3>Why Choose Logics Mind?</h3>
+      <p>  
+    - Innovative Approach: We focus on blending theoretical concepts with real-world applications.  
+    - State-of-the-Art Infrastructure: Our institute provides modern facilities and cutting-edge resources for an optimal learning experience.  
+    - Community-Driven: Join a network of like-minded learners, alumni, and industry experts to build lasting connections.  
+    
+    Whether you're starting your journey in software development or looking to advance your career, Logics Mind is here to guide you every step of the way. Together, lets turn your passion for technology into professional success.  
+    </p>
+    <h3 style="font-weight: bold; text-align: center;">Discover, Learn, and Grow with Logics Mind!</h3>
+    </div>
+
+    <div class="adds" id="add_block"></div>
+    </div></center>
+  </section>
+
+  <section id="gallary">
+    <div class="images">
+      <center>
+      <h2>SHOW CASE</h2>
+      <img src="images/IMG1.avif"  class="image">
+      <img src="images/IMG2.jpg"  class="image">
+      <img src="images/IMG3.jpg"  class="image">
+      <img src="images/IMG4.avif"  class="image"><br><br>
+      <button id="show" class="btn">SHOW IMAGES</button><br><br>
+      <img src="images/IMG1.avif" id="image1" class="image">
+      <img src="images/IMG2.jpg" id="image2" class="image">
+      <img src="images/IMG3.jpg" id="image3" class="image">
+      <img src="images/IMG4.avif" id="image4" class="image">
+      <img src="images/IMG1.avif" id="image5" class="image">
+      <img src="images/IMG2.jpg" id="image6" class="image">
+      <img src="images/IMG3.jpg" id="image7" class="image">
+      <img src="images/IMG4.avif" id="image8" class="image">
+      <img src="images/IMG1.avif" id="image9" class="image">
+      <img src="images/IMG2.jpg" id="image10" class="image"><br><br>
+      <button id="hide" class="btn">Hide Now</button>
+      </center>
+    </div>
+  </section>
+
+  <section id="contactus">
+    <footer> 
+       <div class="left_block" id="block">
+      <h2><u>Contact</u> Us</h2>
+      <ul>
+        <p><b style="font-size: 25px;">&#xf3c5;</b> Logics Mind , Tally Academy, Near Annapurna Mess, Danavaipet, Rajahmundry, AP Pin: 533103</p>
+        <p><b style="font-size: 25px;">&#9742;</b> +91 99491 34545</p>
+        <p><b style="font-size: 25px;">&#128231;</b> vfxsatyadev@gmail.com</p>
+      </ul>
+      </div>
+
+      <div class="right_block" id="block">
+        <form id="contect-form" style="background-color: rgba(0, 0, 0, 0)">
+          <h2 style="color: rgb(239, 239, 6); font-weight: bold; text-decoration: underline; text-decoration-color: #000;"><u style="text-decoration: underline; text-decoration-color: #fff;">Contact</u> Form</h2>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required /><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email"  name="email" required /><br>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message"></textarea><br>
+          
+          <button type="submit" id="btn">Send via WhatsApp</button>
+        </form>
+      </div>
+      
+      <div class="final" id="block">
+        <h1>logicsmind.com</h1>
+        <p style="font-size: 18px;">Follow your more channels...</p>
+        <a href="#" class="fa fa-facebook" style=" text-decoration: none; color: #fff; font-size: 28px; border:1px solid #fff; padding: 15px; border-radius: 100%"></a>
+        <a href="#" class="fa fa-instagram" style="text-decoration: none; color: #fff; font-size: 28px; border:1px solid #fff; padding: 15px; border-radius: 100%"></a>
+        <a href="#" class="fa fa-youtube" style="text-decoration: none; color: #fff; font-size: 28px; border:1px solid #fff; padding: 15px; border-radius: 100%"></a>
+        <a href="#" class="fa fa-linkedin" style="text-decoration: none; color: #fff; font-size: 28px; border:1px solid #fff; padding: 15px; border-radius: 100%"></a>
+      </div>
+      <br><hr><br>
+      <h3 style="text-align: center; color: #fff; font-weight: bold">@ 2024, All Logos & Rights Reserved to their respective Owners only.</h3>
+    </footer>
+  </section>
+
+  <script>
+    document.getElementById('contect-form').addEventListener('submit', function(e) {
+     e.preventDefault(); // Prevent form from submitting the traditional way
+     
+     const name = document.getElementById('name').value;
+     const email = document.getElementById('email').value;
+     const message = document.getElementById('message').value;
+     
+     const whatsappMessage = `Hello, This is ${name}. email is ${email}. Please Contact With Best Quotation... ${message}`;
+     const phoneNumber = "+91 9949134545"; // Replace with the desired WhatsApp number
+     
+     // WhatsApp link
+     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+     
+     // Open WhatsApp link in a new tab/window
+     window.open(whatsappUrl, '_blank');
+     });
+  </script>
+</body>
+</html>

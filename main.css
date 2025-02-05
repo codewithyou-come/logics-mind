@@ -1,0 +1,377 @@
+body
+{
+    cursor: pointer;
+    background-color: #f0f0f0;
+    height: 100%;
+}
+.header_image
+{
+    background-image: url("images/LOGCS-MIND-.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.header
+{
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-left: -10px;
+    margin-top: -10px;
+    text-align: center;
+}
+.header h1
+{
+    color: rgb(241, 16, 9);
+}
+.menu-items
+{
+    overflow: auto;
+    white-space: nowrap;
+    text-align: center;
+    margin-top: -10px;
+}
+.menu-items ul li
+{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.menu-items ul a
+{
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.menu-items ul a:hover
+{
+    background-color: rgba(103, 103, 103,0.7);
+}
+
+#contect-form
+{
+    margin-top: 10%;
+    height: auto;
+    width: 250px;
+    margin-left: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#btn
+{
+    background-color: rgb(19, 248, 19);
+    border: none;
+    padding: 10px;
+    color: #000;
+    font-weight: bold;
+}
+.arrow
+{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(236, 107, 9, 0.7);
+    text-align: center;
+    margin-top: 20vh;
+    margin-left: 85%;
+    position: fixed;
+}
+.arrow h2
+{
+    font-size: 38px;
+    font-weight: bold;
+    color: #fff;
+   margin-top: 0px;
+}
+.courses
+{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.courses h2
+{
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(241, 137, 9);
+    border-left: 5px solid rgb(20, 93, 229);
+    border-right: 5px solid rgb(20, 93, 229);
+}
+fieldset
+{
+  width: 250px;
+  height: auto;
+  display: inline-block;
+}
+legend
+{
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#pack
+{
+    width: 200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pack img
+{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 5px;
+}
+#pack p
+{
+    color: #fff;
+    padding: 2px;
+    font-size: 18px;
+}
+
+.packone{background-image: linear-gradient(to bottom right, rgb(254, 54, 54),rgb(81, 81, 248));}
+
+.certificates
+{
+    background-color: #fff;
+}
+.certificates img
+{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+}
+
+.images
+{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+.images img
+{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.btn
+{
+    padding: 10px;
+    background-color: green;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+
+#aboutus
+{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+.resize
+{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.aboutus
+{
+    width: 44%;
+    height: auto;
+    padding: 5px;
+    border-right: 4px solid rgb(235, 227, 4);
+}
+
+.adds
+{
+  width: 44%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 700px;
+  animation: animate 30s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        background-image: url("images/aimg1.avif");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    20%
+    {
+        background-image: url("images/aimg2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    40%
+    {
+        background-image: url("images/aimg3.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    60%
+    {
+        background-image: url("images/aimg4.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    80%
+    {
+        background-image: url("images/aimg5.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    100%
+    {
+        background-image: url("images/aimg6.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+#add_block
+{
+ display: inline-block;
+}
+
+footer
+{
+    background-image: url("images/footer.png");
+    background-color: rgba(0,0,0,0.8);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    width: 98vw;
+    height: auto;
+    color: #fff;
+    margin-left: -10px;
+    margin-bottom: -10px;
+}
+.left_block
+{
+    width: 30%;
+    text-align: left;
+}
+.left_block h2
+{
+    color: rgb(239, 239, 6);
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #000;
+}
+.left_block h2 u
+{
+    text-decoration-line: underline;
+    text-decoration-color: #fff;
+}
+.right_block
+{
+    width: 30%;
+}
+#block
+{
+    display: inline-block;
+}
+.final
+{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    text-align: center;
+}
+.final h1
+{
+    color:rgb(252, 252, 12);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5px;
+    font-size: 28px;
+}
+
+@media only screen and (max-width: 780px) {
+    
+    .left_block
+    {
+        width: 90%;
+        height: auto;
+    }
+    .right_block
+    {
+        width: 90%;
+        height: auto;
+    }
+    .final
+    {
+        width: 90%;
+        height: auto;
+        margin-top: 3%;
+    }
+    fieldset
+    {
+       width: 80%;
+       height: auto;
+       display: inline-block;
+    }
+    #pack
+    {
+       width: 60%;
+       height: auto;
+       margin-left: auto;
+       margin-right: auto;
+    }
+
+    #pack img
+   {
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      padding: 10px;
+   }
+   .aboutus
+  {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    border: none;
+  }
+  
+  .adds
+  {
+    width: 100%;
+    height: 250px;
+    animation: animate 30s linear infinite;
+ }
+ .certificates img
+{
+    width: 80%;
+    height: 250px;
+    display: block;
+}
+
+}
